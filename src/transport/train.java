@@ -74,4 +74,7 @@ public class train extends transport {
         }
         this.trainLenght = trainLenght;
     }
+    public void refill(){
+        System.out.println("нужно заправлять дизелем");
+    }
 }

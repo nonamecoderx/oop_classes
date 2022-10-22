@@ -26,9 +26,7 @@ public class car extends transport {
             this.gears = gears;
         }
         this.engineVolume = 1.6;
-
     }
-
     public car(String brand, String model, int productionYear, String productionCountry, String color, int maxSpeed, double engineVolume, String gears,
                String typeOfBody, String regNumber, int seatsCount, boolean summerTyres, Key key, Insurance insurance) {
         super(brand, model, productionYear, productionCountry, color, maxSpeed);
@@ -64,26 +62,6 @@ public class car extends transport {
         this.typeOfBody = "седан";
         this.seatsCount = 5;
     }
-// public car(String brand,
-    //             String model,
-    //            Integer productionYear,
-    //          String productionCountry,
-    //        double engineVolume,
-    //      String color,
-    //    int maxSpeed
-    //                 ) {
-    //       super(brand, model, productionYear, productionCountry, color, maxSpeed);
-    //     this (
-    //           engineVolume,
-    //         "механика",
-    //       "седан",
-    //     "x000xx000",
-    //   5,
-    //  true,
-    // new Key(),
-    //   new Insurance()
-    //);
-    //}
 
     public String getTypeOfBody() {
         return typeOfBody;
@@ -164,6 +142,11 @@ public class car extends transport {
         return Character.isDigit(chars[1]) && Character.isDigit(chars[2]) && Character.isDigit(chars[3]) && Character.isDigit(chars[6]) && Character.isDigit(chars[7]) && Character.isDigit(chars[8]);
     }
 
+    @Override
+    public void refill() {
+        System.out.println("можно заправлять бензином, дизелем на заправке или заряжать на специальных электроду-парковках, если это электрокар");
+    }
+
     public static class Key {
         private final boolean remoteRunEngine;
         private final boolean withoutKeyAccess;
@@ -232,6 +215,9 @@ public class car extends transport {
                 System.out.println("некорректный номер страховки");
             }
         }
+
+
+
     }
 
 }

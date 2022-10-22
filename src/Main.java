@@ -34,6 +34,10 @@ public class Main {
         printInfoBus(ikarus);
         printInfoBus(zaz);
 
+        bogdan.refill();
+        lastochka.refill();
+        audi.refill();
+
     }
 
     public static void printInfoBus(bus bus) {
