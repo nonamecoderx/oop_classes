@@ -2,7 +2,7 @@ package transport;
 
 import java.time.LocalDate;
 
-public class car extends transport {
+public class Car extends Transport {
     private double engineVolume;
     private String gears;
     private final String typeOfBody;
@@ -12,7 +12,7 @@ public class car extends transport {
     private Key key;
     private Insurance insurance;
 
-    public car(String brand, String model, int productionYear, String productionCountry, String color, int maxSpeed, String regNumber, String typeOfBody, int seatsCount) {
+    public Car(String brand, String model, int productionYear, String productionCountry, String color, int maxSpeed, String regNumber, String typeOfBody, int seatsCount) {
         super(brand, model, productionYear, productionCountry, color, maxSpeed);
         this.regNumber = regNumber;
         this.seatsCount = seatsCount;
@@ -27,7 +27,7 @@ public class car extends transport {
         }
         this.engineVolume = 1.6;
     }
-    public car(String brand, String model, int productionYear, String productionCountry, String color, int maxSpeed, double engineVolume, String gears,
+    public Car(String brand, String model, int productionYear, String productionCountry, String color, int maxSpeed, double engineVolume, String gears,
                String typeOfBody, String regNumber, int seatsCount, boolean summerTyres, Key key, Insurance insurance) {
         super(brand, model, productionYear, productionCountry, color, maxSpeed);
 
@@ -57,7 +57,7 @@ public class car extends transport {
         this.summerTyres = summerTyres;
     }
 
-    public car(String brand, String model, int productionYear, String productionCountry, String color, int maxSpeed, String typeOfBody, int seatsCount) {
+    public Car(String brand, String model, int productionYear, String productionCountry, String color, int maxSpeed, String typeOfBody, int seatsCount) {
         super(brand, model, productionYear, productionCountry, color, maxSpeed);
         this.typeOfBody = "седан";
         this.seatsCount = 5;

@@ -1,13 +1,13 @@
 package transport;
 
-public class train extends transport {
+public class Train extends Transport {
     private int tripPrice;
     private int tripTime;
     private String firstStation;
     private String lastStation;
     private int trainLenght;
 
-    public train(String brand, String model, int productionYear, String productionCountry, String color, int maxSpeed, int tripPrice, int tripTime, String firstStation, String lastStation, int trainLenght) {
+    public Train(String brand, String model, int productionYear, String productionCountry, String color, int maxSpeed, int tripPrice, int tripTime, String firstStation, String lastStation, int trainLenght) {
         super(brand, model, productionYear, productionCountry, color, maxSpeed);
         this.tripPrice = tripPrice;
         this.tripTime = tripTime;

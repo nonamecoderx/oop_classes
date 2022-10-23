@@ -1,14 +1,14 @@
 package transport;
 
-public abstract class transport {
-    protected String brand;
-    protected String model;
+public abstract class Transport {
+    private String brand;
+    private String model;
     protected final int productionYear;
     protected final String productionCountry;
-    protected String color;
-    protected int maxSpeed;
+    private String color;
+    private int maxSpeed;
 
-    public transport(String brand, String model, int productionYear, String productionCountry, String color, int maxSpeed) {
+    public Transport(String brand, String model, int productionYear, String productionCountry, String color, int maxSpeed) {
         this.brand = brand;
         this.model = model;
 
